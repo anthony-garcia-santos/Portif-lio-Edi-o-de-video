@@ -6,10 +6,10 @@ export default function VideoGallery() {
   const videos = [
     {
       id: 1,
-      title: 'Reação Viral - Uber',
-      thumbnail: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XTJZJsdX4UVEOtd8fHTeRh3SwUi8rd.png',
+      title: 'Ruyter e a fabrica de dinheiro',
+      thumbnail: '/Tumb.jpg',
       views: '1.4K',
-      url: 'https://www.youtube.com/channel/UCag8y4M7oJwgPEEh2-Cwm7w',
+      url: 'https://www.youtube.com/shorts/xO_3We97eSs',
     },
 
     // ---------------------------
@@ -78,7 +78,7 @@ export default function VideoGallery() {
               <img
                 src={video.thumbnail || "/placeholder.svg"}
                 alt={video.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                className="w-full h-full object-contain scale-100 mx-auto transition duration-300"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition flex items-center justify-center">
                 <Play className="w-16 h-16 text-accent opacity-0 group-hover:opacity-100 transition" fill="currentColor" />
